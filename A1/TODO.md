@@ -4,4 +4,4 @@ Qua possiamo mettere i TODO un po' più verbosi o le note/idee che ci vengono pe
 * Aggiungere gli OOV del training a GloVe/vocabulary -> <done>
 * CEloss -> dobbiamo escludere anche i punctuation? -> il tutor ha detto di no sul forum, top
 * la F1Score dobbiamo calcolarla anche sul training come stiamo facendo? Perchè la descrive come una evaluation metric, quindi forse serve solo per validation and test
-* Weird '\/' tokens -> awaiting answer from Virtuale
+* Weird '\/' tokens -> Virtuale:
