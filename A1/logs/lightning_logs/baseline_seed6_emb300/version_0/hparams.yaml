@@ -1,0 +1,4 @@
+hidden_dim: 128
+input_dim: 300
+output_dim: 46
+target_padding_value: 45
