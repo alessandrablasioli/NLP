@@ -16,7 +16,7 @@ from torchmetrics.classification import MultilabelF1Score
 
 
 
-def model_predict_3(model, dataloader):
+def model_bert_cps_predict(model, dataloader):
     model.eval()  
 
     predictions = []
@@ -24,13 +24,12 @@ def model_predict_3(model, dataloader):
         for batch in dataloader:
             data = batch
 
-            X_1, X_2, X_3 = data["Premise"], data["Conclusion"], data["Conclusion"]
+            X_1, X_2, stance = data["Premise"], data["Conclusion"], data["Stance"]
 
             encoded_1 = model.tokenizer(X_1, padding=True, truncation=True, return_tensors="pt")
             encoded_2 = model.tokenizer(X_2, padding=True, truncation=True, return_tensors="pt")
-            encoded_3 = model.tokenizer(X_3, padding=True, truncation=True, return_tensors="pt")
 
-            batch_predictions = model(encoded_1, encoded_2, encoded_3)
+            batch_predictions = model(encoded_1, encoded_2, stance)
             predictions.append(batch_predictions)
 
     all_predictions = torch.cat(predictions)
@@ -39,7 +38,7 @@ def model_predict_3(model, dataloader):
 
 
 
-def model_predict_2(model, dataloader):
+def model_bert_cp_predict(model, dataloader):
     model.eval()  
 
     predictions = []
@@ -60,7 +59,7 @@ def model_predict_2(model, dataloader):
     return all_predictions
 
 
-def model_predict_1(model, dataloader):
+def model_bert_c_predict(model, dataloader):
     model.eval()  
 
     predictions = []
