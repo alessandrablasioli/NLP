@@ -1,19 +1,5 @@
 # pytorch
 import torch
-from torch import nn
-from torch.utils.data import Dataset
-from torch.utils.data import DataLoader
-
-import numpy as np
-
-# pytorch lightning
-from lightning import LightningModule
-from lightning.pytorch import Trainer, seed_everything
-from lightning.pytorch.loggers import TensorBoardLogger
-from lightning.pytorch.callbacks import ModelCheckpoint
-from lightning.pytorch.callbacks.early_stopping import EarlyStopping
-from torchmetrics.classification import MultilabelF1Score
-
 
 
 def model_bert_cps_predict(model, dataloader):
