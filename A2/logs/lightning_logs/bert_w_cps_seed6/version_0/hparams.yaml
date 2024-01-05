@@ -1,5 +1,5 @@
 bert_model_name: roberta-base
 hidden_size: 128
 lr: 0.01
-model_type: Premise
+model_type: Stance
 num_classes: 4
