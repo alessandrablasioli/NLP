@@ -1,0 +1,5 @@
+bert_model_name: roberta-base
+hidden_size: 128
+lr: 0.001
+model_type: Conclusion
+num_classes: 4
