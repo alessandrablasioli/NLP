@@ -33,7 +33,7 @@ This will open the notebook in your default web browser, allowing you to view an
 ## Assignment 2
 
 ### Abstract
-TODO
+This study compares different model architectures for human values detection in textual arguments. Specifically, we focused on predicting higher-order values using BERT-based architectures with a classification head on top. Using all the components of textual arguments led to better results, reaching a macro F1 score of 0.74 on the validation set and 0.72 on the test set.
 
 ### Description
 For a detailed explanation of Assignment 2, please refer to [the report](https://github.com/alessandrablasioli/NLP/blob/main/A2/report.pdf).
