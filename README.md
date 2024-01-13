@@ -36,7 +36,7 @@ This will open the notebook in your default web browser, allowing you to view an
 TODO
 
 ### Description
-For a detailed explanation of Assignment 2, please refer to [the report](). TODO: add report link
+For a detailed explanation of Assignment 2, please refer to [the report](https://github.com/alessandrablasioli/NLP/blob/main/A2/report.pdf).
  
 ### Usage
 To utilize this project, follow these steps:
